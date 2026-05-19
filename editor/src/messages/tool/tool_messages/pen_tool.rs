@@ -36,7 +36,7 @@ impl Default for PenOptions {
 	fn default() -> Self {
 		Self {
 			line_weight: DEFAULT_STROKE_WIDTH,
-			fill: ToolColorOptions::new_secondary(),
+			fill: ToolColorOptions::new_none(),
 			stroke: ToolColorOptions::new_primary(),
 			pen_overlay_mode: PenOverlayMode::FrontierHandles,
 		}
