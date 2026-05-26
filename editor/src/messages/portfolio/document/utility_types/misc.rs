@@ -124,11 +124,11 @@ pub struct BoundingBoxSnapping {
 impl Default for BoundingBoxSnapping {
 	fn default() -> Self {
 		Self {
-			center_point: true,
-			corner_point: true,
-			edge_midpoint: true,
-			align_with_edges: true,
-			distribute_evenly: true,
+			center_point: false,
+			corner_point: false,
+			edge_midpoint: false,
+			align_with_edges: false,
+			distribute_evenly: false,
 		}
 	}
 }
@@ -149,14 +149,14 @@ pub struct PathSnapping {
 impl Default for PathSnapping {
 	fn default() -> Self {
 		Self {
-			anchor_point: true,
-			line_midpoint: true,
-			along_path: true,
-			normal_to_path: true,
-			tangent_to_path: true,
+			anchor_point: false,
+			line_midpoint: false,
+			along_path: false,
+			normal_to_path: false,
+			tangent_to_path: false,
 			path_intersection_point: true,
-			align_with_anchor_point: true,
-			perpendicular_from_endpoint: true,
+			align_with_anchor_point: false,
+			perpendicular_from_endpoint: false,
 		}
 	}
 }
